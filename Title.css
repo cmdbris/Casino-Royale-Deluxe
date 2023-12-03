@@ -2,7 +2,7 @@ body {
     background-image: url("./Assets/Background/Light-Gatsby-1.jpg");
 }
 
-.center {
+.Container {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -13,11 +13,13 @@ body {
 
 .Navigation {
     height: 50px;
-    width: 60%;
+    width: 50%;
     padding: 30px;
-    /* left: 50%;
-    transform: translate(50%); */
-    background-color: black;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    /* backdrop-filter: blur(3px); */
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    border: 1px solid #a55d07;
     font-family: serif;
     font-size: 16px;
     text-align: center;
