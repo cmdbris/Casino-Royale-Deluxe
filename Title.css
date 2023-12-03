@@ -1,8 +1,55 @@
+html {
+  cursor: url(./Assets/Cursor/Chip-1.png) 16 16, pointer;
+}
+
 body {
-    background-image: url("./Assets/Background/Light-Gatsby-1.jpg");
+  background-image: url("./Assets/Background/Light-Gatsby-1.jpg");
+}
+
+@font-face {
+  font-family: 'Odalisque';
+  src: url('./Assets/Fonts/Odalisque-dKD6.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Odalisque NF';
+  src: url('./Assets/Fonts/OdalisqueNf-POwg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .Container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Title {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  background-image: url('./Assets/Background/Text-Card-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding:115px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title p {
+  font-family: 'Odalisque NF', serif;
+  color: white;
+  text-shadow: 0 3px 3px rgba(188, 168, 133, 1);
+  text-align: center;
+  font-size: 50px;
+}
+
+.Navigation-Container {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -56,8 +103,11 @@ body {
     transition: all .2s ease-in-out;
     background-size: 100% 100%;
     background-position:center;
+    cursor: url(./Assets/Cursor/Chip-1.png) 16 16, pointer;
   }
-  .Navigation_Button:focus, .Navigation_Button:hover {
+  .Navigation_Button:focus, 
+  .Navigation_Button:hover {
+    cursor: url(./Assets/Cursor/Chip-2.png) 16 16, pointer;
     background-size: 150% 150%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23),
                   inset 0 -2px 5px 1px #b17d10,
@@ -69,4 +119,7 @@ body {
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
                 inset 0 -2px 5px 1px #b17d10,
                   inset 0 -1px 1px 3px rgba(250,227,133,1);
+  }
+  .Navigation_Button:active {
+    cursor: none;
   }
