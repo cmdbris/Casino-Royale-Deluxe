@@ -20,7 +20,7 @@ body {
   font-style: normal;
 }
 
-@keyframes Loading-Complete {
+@keyframes Loading {
   0% {transform: translateY(0%);}
   100% {transform: translateY(-100%);}
 }
@@ -38,7 +38,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .Loading-Screen p {
   font-family: 'Odalisque NF', serif;
   color: white;
@@ -46,17 +45,16 @@ body {
   text-align: center;
   font-size: 50px;
 }
-
 .Activate-Loading-Screen {
-  animation: Loading-Complete;
+  animation: Loading;
   animation-duration: 1.5s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
   animation-direction: reverse;
   animation-fill-mode: backwards;
   animation-delay: 1s;
 }
 .Deactivate-Loading-Screen {
-  animation: Loading-Complete;
+  animation: Loading;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
   animation-direction: normal;

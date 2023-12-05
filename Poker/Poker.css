@@ -4,3 +4,81 @@ html {
 body {
     background-image: url("../Assets/Background/Light-Gatsby-4.avif");
 }
+
+@font-face {
+  font-family: 'Odalisque';
+  src: url('../Assets/Fonts/Odalisque-dKD6.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Odalisque NF';
+  src: url('../Assets/Fonts/OdalisqueNf-POwg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes Loading {
+  0% {transform: translateY(0%);}
+  100% {transform: translateY(-100%);}
+}
+
+.Loading-Screen {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/Background/Text-Card-5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Loading-Screen p {
+  font-family: 'Odalisque NF', serif;
+  color: white;
+  text-shadow: 0 3px 3px rgba(188, 168, 133, 1);
+  text-align: center;
+  font-size: 50px;
+}
+.Activate-Loading-Screen {
+  animation: Loading;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-direction: reverse;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+.Deactivate-Loading-Screen {
+  animation: Loading;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.Title {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  background-image: url('../Assets/Background/Text-Card-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* padding:115px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title p {
+  font-family: 'Odalisque NF', serif;
+  color: white;
+  text-shadow: 0 3px 3px rgba(188, 168, 133, 1);
+  text-align: center;
+  font-size: 50px;
+}

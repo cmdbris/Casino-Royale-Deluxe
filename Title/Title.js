@@ -1,6 +1,4 @@
-let loadingScreenStatus = false;
 let loadingScreen = document.querySelector('.Loading-Screen');
-
 
 const Navigation = document.getElementById("Navigation");
 
@@ -21,6 +19,6 @@ Navigation.addEventListener('click', (event) => {
         loadingScreen.classList.add('Activate-Loading-Screen')
 
         const filePath = targetButton.getAttribute('data-page');
-        setTimeout(() => {window.location.href = filePath;}, 2500);
+        setTimeout(() => {window.location.href = filePath;}, 3000);
         }
 });
